@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+
+  <title>Superhero name generator</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<%= render 'home/navbar' %> <!-- This render the navbar.html file with navigation -->
+<%= yield %> <!-- #yield  is ruby embedded code and yiled function grabs all code from index.html.erb --> 
 
 </body>
 </html>
