@@ -1,2 +1,33 @@
-<h1>Hello World!</h1>
-<p>My first rails webapp</p>
+
+<br/><br/>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title gray"><%= link_to 'Click here to generate a new Superhero', root_path %></h3>
+  </div>
+  <div class="panel-body">
+        <div class="row">
+            <br/>
+            <div class="col-md-4">
+                <img="<%= @avatar %>"/>
+                <br/><br/>
+            </div>
+            <div class="col-md-4">
+               <h3>Superhero Name:</h3><p class="red"><strong><%= @hero_prefix + ' ' + @hero_name %></strong></p>
+               <h3>Power:</h3> <p class="red"><%= @hero_power %></p><br/><br/>
+               <h4>Your undercover day job is:</h4>
+               <p class="corp-red"><%= @hero_corp_title %></p>
+               <h4>Your Corporate Superpower is:</h4>
+               <p class="corp-red"><%= @hero_corp_power %></p><br/><br/>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+  </div>
+  <div class="panel-footer"><%= link_to 'Create a whole Superhero team', home_team_path %></div>
+</div>
+
+
+
+
+

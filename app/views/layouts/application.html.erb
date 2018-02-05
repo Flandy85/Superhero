@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>Superhero name generator</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <%= render 'home/navbar' %> <!-- This render the navbar.html file with navigation -->
-<%= yield %> <!-- #yield  is ruby embedded code and yiled function grabs all code from index.html.erb --> 
-
+<div class="container">
+  <%= yield %> <!-- #yield  is ruby embedded code and yiled function grabs all code from index.html.erb -->
+</div>
+  <br/><br/>
+  <br/><br/>
+  <center>Copywright &copy John Elder - All rights reserved</center>
 </body>
 </html>
