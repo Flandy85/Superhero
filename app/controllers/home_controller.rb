@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   before_action :common_content, :only => [:index, :team] 
   
  def common_content
+     # Variables with fake generator items
    @hero_name = Faker::Superhero.name
    @hero_power = Faker::Superhero.power
    @hero_prefix = Faker::Superhero.prefix
@@ -12,6 +13,7 @@ class HomeController < ApplicationController
    @hero_corp_power = Faker::Company.bs
    @hero_corp_power = @hero_corp_power.titleize
    
+   # Variables for randomnize avatars, avtar-backgrounds.
    @rand_num = rand(1..1000)
    @set_number = rand(1..4) 
    @bg = rand(1..2)
@@ -33,7 +35,7 @@ class HomeController < ApplicationController
     else
       @background = "bg2"
    end
-   
+   # Varaible with url from robothash.org, for customizing url 
    @avatar = Faker::Avatar.image(@rand_num, "300x300", "png", @set, @background)
    
  end
