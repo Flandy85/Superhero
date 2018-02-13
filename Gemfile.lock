@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  ruby '2.5.0'
   specs:
     actionmailer (4.2.5)
       actionpack (= 4.2.5)
